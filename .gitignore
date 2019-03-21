@@ -132,3 +132,8 @@ m4/lt~obsolete.m4
 
 # jniwrap
 jniwrap/out
+
+# desktop shortcuts
+*.url
+*.desktop
+*.lnk
