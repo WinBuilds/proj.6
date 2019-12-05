@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjLib", "ProjLib\ProjLib.vcxproj", "{BB0DFBB3-D656-40A8-B6CB-D526D92D7F52}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjDll", "ProjDll\ProjDll.vcxproj", "{00027FC1-C715-4F05-96C2-EB17DB0EAB20}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BB0DFBB3-D656-40A8-B6CB-D526D92D7F52} = {BB0DFBB3-D656-40A8-B6CB-D526D92D7F52}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7499A9AF-0DBC-40A8-ADBD-304AAC49AC00}"
 EndProject

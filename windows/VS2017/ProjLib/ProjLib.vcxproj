@@ -72,6 +72,11 @@
       <Define>WIN32;WIN64;_WINDOWS;UNICODE;_UNICODE;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;PROJ_MSVC_DLL_EXPORT=1;PROJ_COMPILATION=1;HAVE_C99_MATH=1;MUTEX_win32;QT_DLL;QT_CORE_LIB;PROJLIB_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</Define>
       <IncludePath>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);..\..\..\src;..\..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\sqlite3;$(QTDIR)\include;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</IncludePath>
     </QtMoc>
+    <PreBuildEvent>
+      <Command>mkdir "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\" /E /I /R /Y /D
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -93,6 +98,11 @@
       <Define>WIN32;WIN64;_WINDOWS;UNICODE;_UNICODE;NDEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_WARNINGS;PROJ_MSVC_DLL_EXPORT=1;PROJ_COMPILATION=1;HAVE_C99_MATH=1;MUTEX_win32;QT_DLL;QT_CORE_LIB;PROJLIB_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</Define>
       <IncludePath>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);..\..\..\src;..\..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\sqlite3;$(QTDIR)\include;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</IncludePath>
     </QtMoc>
+    <PreBuildEvent>
+      <Command>mkdir "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\" /E /I /R /Y /D
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\4D_api.cpp" />
