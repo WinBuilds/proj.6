@@ -185,6 +185,7 @@ void PROJ_DLL *pj_dealloc (void *ptr);
 char PROJ_DLL *pj_strdup(const char *str);
 char PROJ_DLL *pj_strerrno(int);
 int PROJ_DLL *pj_get_errno_ref(void);
+int PROJ_DLL pj_get_errno(void);
 const char PROJ_DLL *pj_get_release(void);
 void PROJ_DLL pj_acquire_lock(void);
 void PROJ_DLL pj_release_lock(void);

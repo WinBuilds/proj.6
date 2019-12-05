@@ -1,3 +1,5 @@
+_*
+
 # Editor temporary/working/backup
 *~
 *.bak
@@ -19,10 +21,10 @@
 # IDEs
 build.local.bat
 build.local.sh
-/.idea
-/.vs*
-/*build*
-/nbproject
+.idea
+.vs
+build_*
+nbproject
 
 # Autotools
 autom4te.cache

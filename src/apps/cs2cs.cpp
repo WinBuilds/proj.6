@@ -585,7 +585,7 @@ int main(int argc, char **argv) {
                                             toStr.c_str(), nullptr);
     if (!transformation) {
         emess(3, "cannot initialize transformation\ncause: %s",
-              pj_strerrno(pj_errno));
+              pj_strerrno(pj_get_errno()));
     }
 
     if (use_env_locale) {

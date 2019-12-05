@@ -5,14 +5,12 @@
 
 int pj_errno = 0;
 
-/************************************************************************/
-/*                          pj_get_errno_ref()                          */
-/************************************************************************/
-
-int *pj_get_errno_ref()
-
-{
+int *pj_get_errno_ref() {
     return &pj_errno;
+}
+
+int pj_get_errno() {
+   return pj_errno;
 }
 
 /* end */
