@@ -73,10 +73,16 @@
       <IncludePath>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);..\..\..\src;..\..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\sqlite3;$(QTDIR)\include;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</IncludePath>
     </QtMoc>
     <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
       <Command>mkdir "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
 xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\" /E /I /R /Y /D
+copy "..\..\..\src\proj.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+copy "..\..\..\src\proj_symbol_rename.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
 </Command>
-    </PreBuildEvent>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -99,10 +105,16 @@ xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platfo
       <IncludePath>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);..\..\..\src;..\..\..\include;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\sqlite3;$(QTDIR)\include;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</IncludePath>
     </QtMoc>
     <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
       <Command>mkdir "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
 xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\" /E /I /R /Y /D
+copy "..\..\..\src\proj.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+copy "..\..\..\src\proj_symbol_rename.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
 </Command>
-    </PreBuildEvent>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\4D_api.cpp" />
