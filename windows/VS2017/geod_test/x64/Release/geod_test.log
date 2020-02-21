@@ -1,0 +1,21 @@
+﻿  geodtest.cpp
+  geod_test.cpp
+geodtest.obj : error LNK2005: main already defined in geodtest.obj
+geodtest.obj : error LNK2001: unresolved external symbol geod_genposition
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygon_addpoint
+geodtest.obj : error LNK2001: unresolved external symbol geod_gendirect
+geodtest.obj : error LNK2001: unresolved external symbol geod_lineinit
+geodtest.obj : error LNK2001: unresolved external symbol geod_inverse
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygon_testedge
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygon_compute
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygonarea
+geodtest.obj : error LNK2001: unresolved external symbol geod_position
+geodtest.obj : error LNK2001: unresolved external symbol geod_directline
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygon_testpoint
+geodtest.obj : error LNK2001: unresolved external symbol geod_inverseline
+geodtest.obj : error LNK2001: unresolved external symbol geod_direct
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygon_addedge
+geodtest.obj : error LNK2001: unresolved external symbol geod_geninverse
+geodtest.obj : error LNK2001: unresolved external symbol geod_init
+geodtest.obj : error LNK2001: unresolved external symbol geod_polygon_init
+D:\Projects\WinBuilds\proj.6\windows\VS2017\x64\Release\geod_test.exe : fatal error LNK1120: 17 unresolved externals

@@ -81,6 +81,9 @@
 xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\" /E /I /R /Y /D
 copy "..\..\..\src\proj.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
 copy "..\..\..\src\proj_symbol_rename.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+copy "..\..\..\src\proj_experimental.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+copy "..\..\..\src\proj_constants.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -113,6 +116,9 @@ copy "..\..\..\src\proj_symbol_rename.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platfo
 xcopy "$(SolutionDir)..\..\include\proj" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\" /E /I /R /Y /D
 copy "..\..\..\src\proj.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
 copy "..\..\..\src\proj_symbol_rename.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+copy "..\..\..\src\proj_experimental.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+copy "..\..\..\src\proj_constants.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj\"
+
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

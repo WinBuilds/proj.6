@@ -26,6 +26,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gie", "gie\gie.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geod", "geod\geod.vcxproj", "{3A70660C-2BC7-4E4F-9335-3FFC3B69B6FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geod_test", "geod_test\geod_test.vcxproj", "{644C6A8B-78E7-4642-A224-198EF3192A81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -64,6 +66,10 @@ Global
 		{3A70660C-2BC7-4E4F-9335-3FFC3B69B6FC}.Debug|x64.Build.0 = Debug|x64
 		{3A70660C-2BC7-4E4F-9335-3FFC3B69B6FC}.Release|x64.ActiveCfg = Release|x64
 		{3A70660C-2BC7-4E4F-9335-3FFC3B69B6FC}.Release|x64.Build.0 = Release|x64
+		{644C6A8B-78E7-4642-A224-198EF3192A81}.Debug|x64.ActiveCfg = Debug|x64
+		{644C6A8B-78E7-4642-A224-198EF3192A81}.Debug|x64.Build.0 = Debug|x64
+		{644C6A8B-78E7-4642-A224-198EF3192A81}.Release|x64.ActiveCfg = Release|x64
+		{644C6A8B-78E7-4642-A224-198EF3192A81}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{AA6D1B52-F811-4496-8A0D-C5392681B6D1} = {641DA0EC-4BDC-4B31-BF40-D93D49C30965}
 		{4F288350-CE15-423F-A057-1490DBC03569} = {641DA0EC-4BDC-4B31-BF40-D93D49C30965}
 		{3A70660C-2BC7-4E4F-9335-3FFC3B69B6FC} = {641DA0EC-4BDC-4B31-BF40-D93D49C30965}
+		{644C6A8B-78E7-4642-A224-198EF3192A81} = {7499A9AF-0DBC-40A8-ADBD-304AAC49AC00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA3EBCDF-4318-4A37-9920-5E9E883A513E}
